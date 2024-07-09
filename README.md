@@ -1,5 +1,5 @@
 # File Transfer Server
-Multi-threaded server, which allows clients to connect, exchange messages and transfer files.
+Multi-threaded server, which allows clients to connect, exchange messages and transfer files. Works on Linux only.
 
 ### Compilation
 `bash compile.sh`
@@ -7,7 +7,8 @@ or
 `gcc -o server main.c server.c file_handler.c client_handler.c -lpthread`
 
 ### Running
-./server < port >
+To start the server: `./server <port>`
+To connect as client: `telnet [localhost/127.0.0.1/::1] <port>`
 
 ### File Commands
 `@show`: Display available files on the server
